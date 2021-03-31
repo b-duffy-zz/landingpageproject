@@ -4,6 +4,7 @@ html, body {
     margin: 0px;
     padding: 0px; 
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
 }
 
 .main-header h1 {
-    font-size: 60px;
+    font-size: 45px;
     padding-top: 50px;
 }
 
