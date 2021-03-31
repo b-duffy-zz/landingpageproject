@@ -1,0 +1,266 @@
+html, body {
+    font-family: 'Racing Sans One', cursive;
+    width: 100%;
+    margin: 0px;
+    padding: 0px; 
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+
+.main-header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 175px;
+    margin: auto;
+}
+
+.main-header h1 {
+    font-size: 60px;
+    padding-top: 50px;
+}
+
+.nav-bar {
+    background-color:black;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    text-align: center;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar a:hover{
+    color: olivedrab;
+    cursor: pointer;
+}
+.nav-bar ul {
+    list-style-type: none;
+    height: 50px;
+}
+
+.nav-bar li {
+    display: inline;
+    margin: 15px;
+}
+
+.main-footer{
+    background-color:black;
+    color: white;
+}
+
+.body-container {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.body-section {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+}
+.main-text{
+    width: 35%;
+}
+.main-text h2{
+    text-align: center;
+    color: #444444;
+}
+
+.main-text p {
+    color: #888888;
+    text-align: center;
+    font-size: 0.8em;
+} 
+
+a.main-button {
+    padding: 5px;
+    border: 2px solid;
+    margin: auto;
+    border-radius: 4px;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    width: 100px;
+    text-align: center;
+}
+
+a.main-button:hover{
+    border: olivedrab 2px solid;
+}
+
+a.main-button:visited{
+    color: black;
+    text-decoration: none;
+
+}
+
+.main-image{
+    width: 25%;
+    padding: 10px;
+}
+
+.main-image img{
+    height: 125px;
+    width: 150px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.alternate-row{
+    background: #888888;
+    width: 100%;
+}
+
+.alternate-row p,
+.alternate-row h2 {
+    color: white;
+}
+
+.main-footer {
+    width: 100%;
+}
+
+.footer-info{
+    padding: 10px 25px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-info a{
+    color: white;
+}
+
+.section-highlight {
+    background-color: #888888;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.questions{
+    text-align: center;
+    align-self: center;
+    align-content: center;
+}
+
+@media (min-width:768px) {
+    .main {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: minmax(225px, auto);
+        grid-template-areas:
+        "hd hd hd hd hd"
+        "mn mn mn mn mn"
+        "ft ft ft ft ft";    
+    }
+
+    .main-header {
+        grid-area: hd;
+        height: 225px;
+        text-align: right;
+        }
+
+     .main-header h1 {
+         font-size: 80px;
+         margin-right: 80px;
+      }
+
+    .nav-bar {
+        background-color:black;
+        color: white;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        text-align: left;
+    }
+
+    .nav-bar li {
+        display: inline-block;
+        font-size: 22px;
+        margin: 15px;
+    }
+
+    .nav-bar ul {
+        list-style-type: none;
+        padding-top: 15px;
+        padding-left: 30px;
+        height: 50px;
+    }
+
+    .body-container {
+         grid-area: mn;
+         margin-top: 0px;
+    }
+
+    .body-section{
+        flex-direction: row;
+        height: 600px;
+        justify-content: space-evenly;
+    }
+
+    .main-text {
+        width: 300px;
+        padding: 20px;
+    }
+
+    .main-text h2{
+        font-size: 50px;
+        text-align: end;
+        color: #444444;
+    }
+
+    .main-text p {
+        color: #888888;
+        text-align: end;
+        font-size: 1.5em;
+    }
+
+    .left p, 
+    .left h2{
+        text-align: left;
+    }
+
+    .alternate-row{
+        background: #888888;
+        width: 100%;
+    }
+
+    .alternate-row p,
+    .alternate-row h2 {
+        color: white;
+    }
+
+    .main-image{
+        width: 300px;
+        padding: 20px;
+    }
+
+    .main-image img{
+        height: 250px;
+        width: 325px;
+        border-radius: 6px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .main-footer {
+        grid-area: ft;
+    }
+}
+
+
