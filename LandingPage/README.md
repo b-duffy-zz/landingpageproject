@@ -1,0 +1,1 @@
+This is a landing page project for a Udacity Front End Dev course in April 2021. The project involved using JS to populate a dynamic navigation menu and highlight the menu based on which section is in view. 
