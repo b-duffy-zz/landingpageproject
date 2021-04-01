@@ -26,8 +26,8 @@ function createNav(){
 createNav();
 
 //gives boolean value if section is in viewport
-function isInViewport(elem) {
-    let bounding = elem.getBoundingClientRect();
+function isInViewport(e) {
+    let bounding = e.getBoundingClientRect();
     return (
         bounding.top >= 0 &&
         bounding.left >= 0 &&
@@ -47,12 +47,8 @@ function highlightSection(){
     }
 }
 
-document.addEventListener('scroll', function(){
-    highlightSection();
-}
-);
 
 document.addEventListener('scroll', function(){
-    removeHighlight();
+    highlightSection();
 }
 );
