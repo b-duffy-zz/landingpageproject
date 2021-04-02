@@ -40,7 +40,7 @@ function isInViewport(e) {
 const navHighlight = document.querySelectorAll('li');
 
 function highlightSection(){
-    for (let i=0; i<=sections.length; i++) {
+    for (let i=0; i<sections.length; i++) {
         if (isInViewport(sections[i]) === true) {
             navHighlight[i].classList.add('section-highlight')
         } else navHighlight[i].classList.remove('section-highlight');
